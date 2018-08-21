@@ -1,0 +1,27 @@
+#page-404{
+	width: 100%;
+	height: 20rem;
+	text-align: center;	
+	background:$grey;
+	padding: 12rem 0;
+	h1, h2{
+		color:$main-color;
+		font-size: 1.5rem;
+	}
+}
+
+
+@media (min-width: 576px){
+	#page-404{
+		h1, h2{
+			font-size: 2rem;
+		}
+	}
+}
+@media (min-width: 1200px){
+	#page-404{
+		h1, h2{
+			font-size: 3rem;
+		}
+	}
+}

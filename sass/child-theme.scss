@@ -1,0 +1,24 @@
+@import "theme/child_theme_variables";
+@import "assets/bootstrap4";
+@import "../src/sass/understrap/understrap/understrap";
+@import "../src/sass/understrap/theme/contact-form7";
+
+//Optional files
+@import "assets/font-awesome";
+@import "assets/underscores";
+
+//my scss
+@import "theme/fonts";
+@import "theme/child_theme";
+@import "theme/child_header";
+@import "theme/footer";
+@import "theme/about-page";
+@import "theme/gallery";
+@import "theme/child_help";
+
+@import "theme/single-post";
+@import "theme/contact-page";
+
+@import "theme/front-p";
+@import "theme/_child_404";
+@import "theme/video-page";

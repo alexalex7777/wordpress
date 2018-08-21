@@ -1,0 +1,142 @@
+// ------------ Google Map ----------------
+.contact-map {
+	position: relative;
+	padding-bottom: 2rem;
+	iframe {
+		width: 100%;
+	}
+	.map-pop{
+		display: none;
+	}
+}
+
+//--------------------- Contact-form ------------------
+.form-title {
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+}
+
+.wpcf7 {
+	width: 90%;
+	max-width: 100%;
+	textarea {
+		height: 5rem;
+	}
+	input[type=text], input[type=email], textarea {
+		color: $grey;
+		border-color: transparent;
+		border-bottom: 1px solid $grey;
+		background-color: transparent;
+		padding-top: 1rem;
+		border-radius: unset;
+		margin-bottom: 1rem;
+	}
+	input[type=text]:focus, input[type=email]:focus, textarea:focus {
+		border-color: transparent;
+		border-bottom: 1px solid $grey;
+		transition: none !important;
+		box-shadow: none;
+		outline: 0;
+	}
+	input[type=text]:active, input[type=email]:active, textarea:active {
+		border-color: transparent;
+		border-bottom: 1px solid $grey;
+		transition: none !important;
+		box-shadow: none;
+		outline: 0;
+	}
+	.wpcf7-not-valid-tip {
+		font-size: 1rem;
+		padding: 0.2rem 1rem;
+	}
+	.wpcf7-response-output {
+		margin: 0;
+	}
+	.wpcf7-form p {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	input[type=submit] {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		background-color: $main-color;
+		color: $black-color;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 1rem 2rem;
+		border: none;
+		border-radius: 2rem;
+		margin-top: 2rem;
+		&:hover {
+			background-color: $red-color;
+			color: $main-color;
+			cursor: pointer;
+		}
+		&:focus {
+			background-color: $main-color;
+			color: $grey;
+			border-bottom: 1px solid $grey;
+			box-shadow: none;
+		}
+		&:active {
+			box-shadow: none !important;
+			background-color: $main-color !important;
+			border: none !important;
+			border-bottom: 1px solid $grey !important;
+		}
+	}
+}
+@media screen and (min-width: 576px){
+	.contact-map {
+		position: relative;
+		padding-bottom: 2rem;
+		iframe {
+			width: 100%;
+		}
+		.map-pop{
+			display: block;
+			position: absolute;
+			top:10rem;
+			left:1rem;
+			width: 12rem;
+			p{
+				background:$white-color;
+				padding: 1rem;
+				font-size: 0.7rem;
+				line-height: 1.2rem;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1200px){
+	.wpcf7 {
+		width: 50%;
+		max-width: 100%;
+		textarea {
+			height: 5rem;
+		}
+	}
+	.contact-map {
+		.map-pop{
+			position: absolute;
+			top:10rem;
+			left:8rem;
+			width: 18rem;
+			p{
+				background:$white-color;
+				padding: 1.5rem;
+				font-size: 1rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+}
+
+
+
+

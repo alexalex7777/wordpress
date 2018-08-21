@@ -1,0 +1,118 @@
+// -------------- Footer Common Settings --------------------
+.footer {
+	background-color: $footer-color;
+	padding: 2rem 0;
+	.footer-title {
+		font: 700 1.5rem/3rem Lumberjack;
+		color: $black-color;
+	}
+	p {
+		color: $black-color;
+	}
+}
+
+//--------------Mentors logo-------------------
+.img-logo {
+	width: 4rem;
+	img{
+		width: 4rem;
+	}
+}
+.img-logo:last-child{
+	width: 8rem;
+	img {
+		width: 7rem;
+	}
+}
+.logo-link {
+	padding: 0.2rem;
+	display: inline-block;
+	border: 0.15rem solid transparent;
+}
+
+//---------------Footer nav-menu-------------
+.footer-nav {
+	a:link, a:visited {
+		color: $black-color;
+		padding: 0 1rem 0 0;
+	}
+	a:hover {
+		color: $main-color;
+	}
+	li:last-child {
+		font-weight: 700;
+	}
+}
+
+//-------------------- list of contacts --------------------
+.contact-item {
+	address {
+		color: $black-color;
+	}
+	.footer-link {
+		color: $black-color;
+	}
+	.footer-link:hover {
+		color: $main-color;
+	}
+}
+
+//---------------------- List of social link -------------------------
+.social-list {
+	li {
+		padding: 0.5rem;
+	}
+	.social {
+		font-size: 2.5rem;
+		color: $black-color;
+		display: inline-block;
+		padding: 0.4rem 0.6rem;
+		border-radius: 50%;
+	}
+	.social:hover {
+		//color: $main-color;
+		background-color: $main-color;
+	}
+}
+
+// -------------------- Site Info ----------------
+.siteinfo {
+	.site-right {
+		color: $black-color;
+		font-size: 1rem;
+	}
+	.site-date {
+		color: $black-color;
+		font-size: 1rem;
+	}
+	.site-date:before {
+		content: "\00A9";
+		color: $black-color;
+		font-size: 1rem;
+	}
+}
+
+.siteinfo:before {
+	content: " ";
+	height: 0.2rem;
+	display: block;
+	background-color: $grey;
+	width: 7rem;
+}
+
+//-------------------arrow header-------------------
+#arrow-top {
+	display: none;
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	color: $black;
+	font-size: 3rem;
+	z-index: 100;
+	border-radius: 50%;
+	padding: 0 0.5rem;
+}
+
+#arrow-top:hover {
+	background: $primary;
+}

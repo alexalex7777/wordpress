@@ -1,0 +1,130 @@
+
+//--------------- Gallery images --------------------
+
+.gallery-item {
+	img {
+		width: 100%;
+		-moz-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: all 1s ease-out;
+	}
+	.gallery-image:hover img{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+	}
+}
+
+.gallery-image {
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery-hover {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: $main-color;
+	opacity: 0.9;
+	text-align: center;
+	margin: auto;
+}
+
+.gallery-image:hover .gallery-hover {
+	display: flex;
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 0.9;}
+}
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 0.9;}
+}
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 0.9;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 0.9;}
+}
+
+.before-title {
+	font-size: 2rem;
+	color: $black-color;
+	&:hover {
+		color: $red-color;
+	}
+}
+
+.gallery-item-name:link, .gallery-item-name:visited {
+	font-size: 1.5rem;
+	color: $black-color;
+	line-height: 1.5rem;
+	&:hover {
+		color: $red-color;
+	}
+}
+
+
+.gallery-item-name:after {
+	content: '';
+	display: block;
+	height: 0.1rem;
+	background-color: $black-color;
+	width: 7rem;
+	margin: 0.5rem auto;
+}
+
+.padding {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	line-height: 1.5rem;
+}
+
+//------------ Pagination ----------------
+.nav-links {
+	padding-bottom: 3rem;
+	padding-top: 2rem;
+	text-align: center;
+	.page-nav-link:link, .page-nav-link:visited {
+		padding: 0 1rem;
+		color: $main-color;
+		display: inline-block;
+		margin: 0 0.5rem;
+		border-radius: 0.5rem;
+		border: 1px solid $main-color;
+	}
+	.page-nav-link:hover {
+		color: $red-color;
+		background-color: $main-color;
+		border: 1px solid $main-color;
+	}
+	.active {
+		.page-nav-link:link, .page-nav-link:visited, .page-nav-link:hover {
+			color: $white-color;
+			background-color: $main-color;
+		}
+	}
+}

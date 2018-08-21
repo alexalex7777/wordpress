@@ -1,0 +1,22 @@
+//------------Video Page----------------
+.video-button {
+	color: $black-color;
+	position: absolute;
+	bottom: -2.5rem;
+	right: 40%;
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: $main-color;
+}
+.video-i {
+	padding-right: 0.5rem;
+}
+.video-button:hover {
+	cursor: pointer;
+}
+.video-hover {
+	position: relative;
+}
+.video-item {
+	padding-bottom: 4rem;
+}

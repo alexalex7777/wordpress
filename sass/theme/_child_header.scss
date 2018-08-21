@@ -1,0 +1,271 @@
+.header-mobile-menu{
+	position: absolute;
+	padding: 0;
+	z-index: 11;
+	i{
+		font-size: 1.1rem;
+		margin-top: 1rem;
+		color:$white-color;
+		background:$black-background;
+		padding: 0.5rem;
+	}
+	.bottom-right-header-block-mobile{
+		background:$white-color;
+		padding: 2rem;
+		font-size: 0.8rem;
+		margin:0 auto;
+		margin-top: 5rem;
+		.btn{
+			background:none;
+			position: absolute;
+			left:33%;
+			bottom:-5rem;
+			margin-bottom: 2rem;
+			box-shadow:none;
+			img{
+				width: 4.5rem;
+			}
+		}
+	}	
+}
+.hmc-menu{
+	background:$black-background;
+	position: fixed;
+}
+.top-navbar-mobile{
+	width: 100%;
+	display: none;
+	position: fixed;
+	top:0;
+	background:$black-background;
+	z-index: 10;
+	i{
+		font-size: 1.5rem;
+		margin-top: 1.1rem;
+		color:$white-color;
+	}
+	img{
+		width: 30%;
+		height: auto;
+		margin:0.5rem 0;
+	}
+	.menu-item a{
+		text-transform: uppercase;
+		font-size: 0.9rem;
+	}
+}
+.bg-header-menu{
+	display: none;
+}
+.top-bg-header-menu{
+	display: none;
+}
+.top-header-menu-navigation{
+	display: block;
+	background:$black-background;
+	z-index: 10;
+	width: 100%;
+	padding: 1rem 0;
+	.fa{
+		color:$white-color;
+	}
+	.heder-bg-menu{
+		width: 100%;
+		height: 100vh;
+	}
+	a{
+		color:$white-color;
+	}
+	a:hover{
+		color:$primary;
+	}
+	ul{
+		margin: 1rem 0;
+	}
+	i{
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+	.menu-item-367 {
+		margin-top: 1rem;
+		.nav-link{ 
+			display: inline;
+			border:0.1rem solid $primary;
+			border-radius: 5rem;
+			padding: 0.5rem 1rem;
+		}
+	}
+}
+.header-menu-navigation{
+	display: block;
+	background:$black-background;
+	z-index: 10;
+	width: 100%;
+	padding: 1rem 0;
+	.fa{
+		color:$white-color;
+	}
+	.heder-bg-menu{
+		width: 100%;
+		height: 100vh;
+	}
+	a{
+		color:$white-color;
+	}
+	a:hover{
+		color:$primary;
+	}
+	ul{
+		margin: 1rem 0;
+	}
+	i{
+		font-size: 1.5rem;
+		margin-top: 2rem;
+	}
+	.menu-item-367 {
+		margin-top: 1rem;
+		.nav-link{ 
+			display: inline;
+			border:0.1rem solid $primary;
+			border-radius: 5rem;
+			padding: 0.5rem 1rem;
+		}
+	}
+}
+.header-desktop-menu{
+	display: none;
+}
+.top-navbar-desktop{
+	display: none;
+}
+#exampleModal{
+	.modal-body{
+		padding: 0;
+	}
+}
+.front-page-logo-bg{
+	margin-left: 35%;
+}
+.offset-fpg{
+	margin-left: 10%;
+}
+.top-navbar-mobile-fa-bg{
+	margin-left: 0;
+}
+.offset-fpg-fa{
+	margin-left: 27%;
+}
+@media (min-width: 576px){
+	.header-menu-navigation{
+		ul{
+			margin:0; 
+		}
+	}
+	.header-mobile-menu{		
+		.bottom-right-header-block-mobile{			
+			.btn{
+				left:40%;
+				bottom:-5rem;
+				margin-bottom: 2rem;				
+			}
+		}	
+	}
+}
+@media (min-width: 992px){
+	.header-mobile-menu{
+		display: none;
+	}
+	.top-navbar-mobile-fa-bg{
+		display: none;
+	}
+	.front-page-logo-bg{
+		margin-left: 5rem;
+	}
+	.top-navbar-desktop{
+		display: block;
+		.menu-item-367{ 
+			border:0.1rem solid $primary;
+			border-radius: 5rem;
+		}
+		a{
+			color:$white-color;
+		}
+		a:hover{
+			color: $primary;
+		}
+	}
+	.header-desktop-menu{
+		width: 100%;
+		position: absolute;
+		display: block;
+		.front-page-container-top{
+			background:linear-gradient(to right, $nk, $black-background);
+			.nav-link{
+				color:$white-color;
+			}
+		}
+		.right-header-block{
+			padding: 0 2rem;
+			.bottom-right-header-block{
+				background:$white-color;
+				padding: 3rem;
+				.header-text-block{
+					font-size: 1.2rem;
+					line-height: 2rem;
+				}
+				.btn{
+					background:none;
+					position: absolute;
+					left:40%;
+					bottom:-3.5rem;
+					box-shadow: none;
+					img{
+						width: 6rem;
+					}
+				}
+			}	
+			a{
+				color:$white-color;
+			}
+			a:hover{
+				color:$primary;
+			}
+			#header-navbar{
+				padding: 1rem;
+				.menu-item{
+					a{
+						line-height: 1.5rem;
+						font-size: 0.9rem;
+					}
+				}
+			}
+			.go-to-help{
+				.front-help-project{
+					font-size: 0.9rem;
+					line-height:7rem;
+					padding: 0.5rem 0.7rem;
+					border:0.1rem solid $primary;
+					border-radius: 5rem;
+				}
+			}	
+		}
+		#navbarNavDropdown{	
+			.nav-link{
+				font-size: 1rem;
+				font-weight:bold;
+				text-transform: uppercase;		
+			}
+			.menu-item{
+				margin: 0 1rem;
+			}		
+		}
+		.navbar-toggler{
+			margin: 0 auto;
+		}
+		.menu-item-367 .nav-link{ 
+			border:0.1rem solid $primary;
+			border-radius: 5rem;
+			padding: 0.45rem 1rem;
+		}
+	}	
+}

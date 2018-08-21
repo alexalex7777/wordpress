@@ -1,0 +1,80 @@
+//---------------About Page ---------------
+.page-title {
+	font: 400 3rem/5rem Lumberjack;
+	color: $white-color;
+	position: relative;
+	display: inline-block;
+	padding: 1rem;
+	margin-top: 11rem;
+	text-transform: uppercase;
+	@media (min-width: 768px) {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	@media (min-width: 993px) {
+		font-size: 5rem;
+		line-height: 6rem;
+	}
+}
+
+.page-title:before {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 50%;
+	height: 0.2rem;
+	right: 100%;
+	background-color: $white-color;
+	width: 7rem;
+	@media (min-width: 768px) {
+		display: inline-block;
+	}
+}
+
+.page-title:after {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 50%;
+	height: 0.2rem;
+	left: 100%;
+	background-color: $white-color;
+	width: 7rem;
+	@media (min-width: 768px) {
+		display: inline-block;
+	}
+}
+
+.content-about {
+	ul {
+		line-height: 2rem;
+		li {
+			padding-left: 2rem;
+			&:before {
+				content: '\2714';
+				color: $main-color;
+				font-size: 1rem;
+				padding-right: 0.5rem;
+			}
+			ul li:before {
+				content: '\2022';
+				color: $main-color;
+				font-size: 1rem;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+	ol {
+		counter-reset: num;
+		line-height: 2rem;
+		li {
+			padding-left: 2rem;
+		}
+	}
+	ol li:before {
+		counter-increment: num;
+		content: counter(num) '. ';
+		color: $main-color;
+		padding-right: 0.5rem;
+	}
+}

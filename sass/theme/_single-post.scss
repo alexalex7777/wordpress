@@ -1,0 +1,290 @@
+//----------------- Single page ----------------
+
+.gallery-single-item {
+  img {
+    width: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+  }
+  .single-img:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+
+.single-img {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-hover {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $main-color;
+  opacity: 0.8;
+  text-align: center;
+  margin: auto;
+}
+
+.single-img:hover .single-hover {
+  display: flex;
+  -webkit-animation-name: SingFadeIn;
+  -moz-animation-name: SingFadeIn;
+  -o-animation-name: SingFadeIn;
+  animation-name: SingFadeIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes SingFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-moz-keyframes SingFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-o-keyframes SingFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes SingFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.hover-i {
+  font-size: 2rem;
+  color: $white;
+  padding: 1rem;
+  background-color: $black-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close_popup {
+  position: absolute;
+  bottom: 105%;
+  right: 0;
+  font-size: 3rem;
+  color: $main-color;
+}
+
+.imgpop {
+  border: 5px solid #fff;
+}
+
+.a-opacity {
+  opacity: 1;
+}
+
+
+.page-single-title {
+  font: 400 2rem/2.5rem Lumberjack;
+  color: $white-color;
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 11rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media (min-width: 993px) {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
+.page-single-title:before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 0.2rem;
+  right: 100%;
+  background-color: $white-color;
+  width: 5rem;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.page-single-title:after {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 0.2rem;
+  left: 100%;
+  background-color: $white-color;
+  width: 5rem;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+//-------------------------content------------------------------
+
+.video {
+  position: relative;
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+  @media (min-width: 992px) {
+    width: 70%;
+  }
+}
+
+//-------------------------Comments List-----------------------------
+.comments-list {
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+}
+.comments-title {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.avatar {
+  img {
+    width: 50px;
+    max-width: 50px;
+  }
+}
+
+.comments-text {
+  padding-left: 1rem;
+  p {
+    color: $grey;
+    padding-bottom: 0.5rem;
+  }
+  .comment-author {
+    a:link, a:visited {
+      font-weight: bold;
+      color: $red-color;
+    }
+  }
+}
+
+.comment-list {
+  padding-top: 2rem;
+  .children {
+    padding-left: 3rem;
+  }
+}
+
+//---------------- Leave Comment Form --------------------
+
+.leave-comment-form {
+  input, textarea {
+    color: $grey;
+    border-color: transparent;
+    border-bottom: 1px solid $grey;
+    background-color: transparent;
+    padding-top: 1rem;
+    border-radius: unset;
+  }
+  input:focus, textarea:focus {
+    border-color: transparent;
+    border-bottom: 1px solid $grey;
+    box-shadow: none;
+  }
+}
+
+.form-submit {
+  .comment-button {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-color: $main-color;
+    color: $black-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+  }
+  .comment-button:hover {
+    background-color: $main-color;
+    color: $grey;
+    cursor: pointer;
+  }
+}
+
+.leave-comment-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.comment-reply-link {
+  color: $black-color;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  border: 1px solid $main-color;
+}
+.comment-reply-link:hover {
+  color: $red-color;
+  border: 1px solid $red-color;
+}
+.comment-reply-title {
+  a:link, a:visited {
+    display: inline-block;
+    color: $red-color;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid $main-color;
+  }
+  a:hover {
+    border: 1px solid $red-color;
+  }
+}
+
+
